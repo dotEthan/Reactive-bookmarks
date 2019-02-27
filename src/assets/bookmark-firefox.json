@@ -1,0 +1,534 @@
+{
+    "guid": "root________",
+    "title": "",
+    "index": 0,
+    "dateAdded": 1526162009543000,
+    "lastModified": 1551276611330000,
+    "id": 1,
+    "typeCode": 2,
+    "type": "text/x-moz-place-container",
+    "root": "placesRoot",
+    "children": [
+        {
+            "guid": "menu________",
+            "title": "menu",
+            "index": 0,
+            "dateAdded": 1526162009543000,
+            "lastModified": 1530386360326000,
+            "id": 2,
+            "typeCode": 2,
+            "type": "text/x-moz-place-container",
+            "root": "bookmarksMenuFolder",
+            "children": [
+                {
+                    "guid": "kDV5_EJ05FxX",
+                    "title": "Recent Tags",
+                    "index": 0,
+                    "dateAdded": 1526162011255000,
+                    "lastModified": 1530397031119000,
+                    "id": 14,
+                    "typeCode": 1,
+                    "annos": [
+                        {
+                            "name": "Places/SmartBookmark",
+                            "value": "RecentTags",
+                            "expires": 4,
+                            "flags": 0
+                        }
+                    ],
+                    "type": "text/x-moz-place",
+                    "uri": "place:type=6&sort=14&maxResults=10"
+                },
+                {
+                    "guid": "KDFcn_Kse8Jn",
+                    "title": "",
+                    "index": 1,
+                    "dateAdded": 1526162011268000,
+                    "lastModified": 1526162011268000,
+                    "id": 15,
+                    "typeCode": 3,
+                    "type": "text/x-moz-place-separator"
+                },
+                {
+                    "guid": "1756HH2L45Ca",
+                    "title": "Mozilla Firefox",
+                    "index": 2,
+                    "dateAdded": 1526162011008000,
+                    "lastModified": 1530386360326000,
+                    "id": 7,
+                    "typeCode": 2,
+                    "type": "text/x-moz-place-container",
+                    "children": [
+                        {
+                            "guid": "TfUQnnHsdF9V",
+                            "title": "Customize Firefox",
+                            "index": 0,
+                            "dateAdded": 1530386360326000,
+                            "lastModified": 1530386360326000,
+                            "id": 124,
+                            "typeCode": 1,
+                            "type": "text/x-moz-place",
+                            "uri": "https://support.mozilla.org/en-US/kb/customize-firefox-controls-buttons-and-toolbars?utm_source=firefox-browser&utm_medium=default-bookmarks&utm_campaign=customize"
+                        },
+                        {
+                            "guid": "fghzaYi5NO3x",
+                            "title": "Help and Tutorials",
+                            "index": 1,
+                            "dateAdded": 1526162011008000,
+                            "lastModified": 1530397031103000,
+                            "id": 8,
+                            "typeCode": 1,
+                            "iconuri": "fake-favicon-uri:https://support.mozilla.org/en-US/products/firefox",
+                            "type": "text/x-moz-place",
+                            "uri": "https://support.mozilla.org/en-US/products/firefox"
+                        },
+                        {
+                            "guid": "8sYn4l6_o1NP",
+                            "title": "Customize Firefox",
+                            "index": 2,
+                            "dateAdded": 1526162011008000,
+                            "lastModified": 1526162011008000,
+                            "id": 9,
+                            "typeCode": 1,
+                            "iconuri": "fake-favicon-uri:https://www.mozilla.org/en-US/firefox/customize/",
+                            "type": "text/x-moz-place",
+                            "uri": "https://www.mozilla.org/en-US/firefox/customize/"
+                        },
+                        {
+                            "guid": "mPWupfgVeF1A",
+                            "title": "Get Involved",
+                            "index": 3,
+                            "dateAdded": 1526162011008000,
+                            "lastModified": 1530397031119000,
+                            "id": 10,
+                            "typeCode": 1,
+                            "iconuri": "fake-favicon-uri:https://www.mozilla.org/en-US/contribute/",
+                            "type": "text/x-moz-place",
+                            "uri": "https://www.mozilla.org/en-US/contribute/"
+                        },
+                        {
+                            "guid": "PG7S-nyjh5TH",
+                            "title": "About Us",
+                            "index": 4,
+                            "dateAdded": 1526162011008000,
+                            "lastModified": 1530397031103000,
+                            "id": 11,
+                            "typeCode": 1,
+                            "iconuri": "fake-favicon-uri:https://www.mozilla.org/en-US/about/",
+                            "type": "text/x-moz-place",
+                            "uri": "https://www.mozilla.org/en-US/about/"
+                        }
+                    ]
+                },
+                {
+                    "guid": "NmVey_m2A3sM",
+                    "title": "Recent Tags",
+                    "index": 3,
+                    "dateAdded": 1520349790828000,
+                    "lastModified": 1530587142381000,
+                    "id": 63,
+                    "typeCode": 1,
+                    "annos": [
+                        {
+                            "name": "Places/SmartBookmark",
+                            "value": "RecentTags",
+                            "expires": 4,
+                            "flags": 0
+                        }
+                    ],
+                    "type": "text/x-moz-place",
+                    "uri": "place:type=6&sort=14&maxResults=10"
+                },
+                {
+                    "guid": "06V23471w1Gd",
+                    "title": "",
+                    "index": 4,
+                    "dateAdded": 1523886449342000,
+                    "lastModified": 1523886449342000,
+                    "id": 62,
+                    "typeCode": 3,
+                    "type": "text/x-moz-place-separator"
+                },
+                {
+                    "guid": "yK0Zkekmkc2H",
+                    "title": "Mozilla Firefox",
+                    "index": 5,
+                    "dateAdded": 1520349790613000,
+                    "lastModified": 1523886449168000,
+                    "id": 16,
+                    "typeCode": 2,
+                    "type": "text/x-moz-place-container"
+                }
+            ]
+        },
+        {
+            "guid": "toolbar_____",
+            "title": "toolbar",
+            "index": 1,
+            "dateAdded": 1523886449252000,
+            "lastModified": 1523886449252000,
+            "id": 3,
+            "typeCode": 2,
+            "type": "text/x-moz-place-container",
+            "root": "toolbarFolder",
+            "children": [
+                {
+                    "guid": "U_Eiw7qB9UA8",
+                    "title": "Most Visited",
+                    "index": 0,
+                    "dateAdded": 1520349790776000,
+                    "lastModified": 1530587142370000,
+                    "id": 13,
+                    "typeCode": 1,
+                    "annos": [
+                        {
+                            "name": "Places/SmartBookmark",
+                            "value": "MostVisited",
+                            "expires": 4,
+                            "flags": 0
+                        }
+                    ],
+                    "type": "text/x-moz-place",
+                    "uri": "place:sort=8&maxResults=10"
+                },
+                {
+                    "guid": "13f95qr2aQXt",
+                    "title": "Getting Started",
+                    "index": 1,
+                    "dateAdded": 1526162011106000,
+                    "lastModified": 1530397031088000,
+                    "id": 12,
+                    "typeCode": 1,
+                    "iconuri": "fake-favicon-uri:https://www.mozilla.org/en-US/firefox/central/",
+                    "type": "text/x-moz-place",
+                    "uri": "https://www.mozilla.org/en-US/firefox/central/"
+                },
+                {
+                    "guid": "bOWs4E7LiSec",
+                    "title": "Most Visited",
+                    "index": 2,
+                    "dateAdded": 1523886449252000,
+                    "lastModified": 1526162074318000,
+                    "id": 60,
+                    "typeCode": 1,
+                    "annos": [
+                        {
+                            "name": "Places/SmartBookmark",
+                            "value": "MostVisited",
+                            "expires": 4,
+                            "flags": 0
+                        }
+                    ],
+                    "type": "text/x-moz-place",
+                    "uri": "place:sort=8&maxResults=10"
+                },
+                {
+                    "guid": "5FgK7kfK00dt",
+                    "title": "Getting Started",
+                    "index": 3,
+                    "dateAdded": 1520349790654000,
+                    "lastModified": 1523886449222000,
+                    "id": 26,
+                    "typeCode": 1,
+                    "iconuri": "fake-favicon-uri:https://www.mozilla.org/en-US/firefox/central/",
+                    "type": "text/x-moz-place",
+                    "uri": "https://www.mozilla.org/en-US/firefox/central/"
+                }
+            ]
+        },
+        {
+            "guid": "unfiled_____",
+            "title": "unfiled",
+            "index": 3,
+            "dateAdded": 1526162009543000,
+            "lastModified": 1551276611330000,
+            "id": 5,
+            "typeCode": 2,
+            "type": "text/x-moz-place-container",
+            "root": "unfiledBookmarksFolder",
+            "children": [
+                {
+                    "guid": "KDkE9OMIITGh",
+                    "title": "karan/Projects: A list of practical projects that anyone can solve in any programming language.",
+                    "index": 1,
+                    "dateAdded": 1520717798965000,
+                    "lastModified": 1526162074100000,
+                    "id": 38,
+                    "typeCode": 1,
+                    "annos": [
+                        {
+                            "name": "bookmarkProperties/description",
+                            "value": "GitHub is where people build software. More than 27 million people use GitHub to discover, fork, and contribute to over 80 million projects.",
+                            "expires": 4,
+                            "flags": 0
+                        }
+                    ],
+                    "type": "text/x-moz-place",
+                    "uri": "https://github.com/karan/Projects"
+                },
+                {
+                    "guid": "7J1Lu1IisLMF",
+                    "title": "Join or Donate to the Toronto Vegetarian Association - Toronto Vegetarian Association",
+                    "index": 2,
+                    "dateAdded": 1520719645363000,
+                    "lastModified": 1520719645363000,
+                    "id": 29,
+                    "typeCode": 1,
+                    "iconuri": "https://app.etapestry.com/hosted/TorontoVegetarianAssociation/images2/favicon.ico",
+                    "type": "text/x-moz-place",
+                    "uri": "https://app.etapestry.com/hosted/TorontoVegetarianAssociation/OnlineDonation.html"
+                },
+                {
+                    "guid": "MznjSiEOSFML",
+                    "title": "Simple Coconut Quinoa and Lentil Curry with Lime Mango + Video : vegetarian",
+                    "index": 3,
+                    "dateAdded": 1521000599263000,
+                    "lastModified": 1526162073943000,
+                    "id": 22,
+                    "typeCode": 1,
+                    "annos": [
+                        {
+                            "name": "bookmarkProperties/description",
+                            "value": "reddit: the front page of the internet",
+                            "expires": 4,
+                            "flags": 0
+                        }
+                    ],
+                    "type": "text/x-moz-place",
+                    "uri": "https://www.reddit.com/r/vegetarian/comments/847pan/simple_coconut_quinoa_and_lentil_curry_with_lime/"
+                },
+                {
+                    "guid": "ivoGJyysWfXJ",
+                    "title": "Smoky Tomato, Corn, and Potato Stew | Madly Organic | Healthy Lifestyle Coaching",
+                    "index": 4,
+                    "dateAdded": 1521124717203000,
+                    "lastModified": 1526162074225000,
+                    "id": 50,
+                    "typeCode": 1,
+                    "annos": [
+                        {
+                            "name": "bookmarkProperties/description",
+                            "value": "This stew is a staple during the fall and winter season in my house.  It is comforting, healthy, and tasty!  It takes less than 10 minutes to prepare",
+                            "expires": 4,
+                            "flags": 0
+                        }
+                    ],
+                    "type": "text/x-moz-place",
+                    "uri": "https://www.madlyorganicllc.com/single-post/2018/01/04/Smoky-Tomato-Corn-and-Potato-Stew"
+                },
+                {
+                    "guid": "ToleyUAht7to",
+                    "title": "Vegan Garlic Pasta with Roasted Cajun Cauliflower - Vegan Richa",
+                    "index": 5,
+                    "dateAdded": 1521140635397000,
+                    "lastModified": 1526162074162000,
+                    "id": 43,
+                    "typeCode": 1,
+                    "annos": [
+                        {
+                            "name": "bookmarkProperties/description",
+                            "value": "Vegan Garlic Pasta with Roasted Cajun Cauliflower. Baked Cajun Spice Cauliflower, Creamy Garlic sauce Penne. Vegan Recipe Can be Nut-free gluten-free.",
+                            "expires": 4,
+                            "flags": 0
+                        }
+                    ],
+                    "type": "text/x-moz-place",
+                    "uri": "https://www.veganricha.com/2017/06/vegan-garlic-pasta-roasted-cajun-cauliflower.html"
+                },
+                {
+                    "guid": "IV1G8PRNCT7y",
+                    "title": "media query sizes",
+                    "index": 35,
+                    "dateAdded": 1524956677890000,
+                    "lastModified": 1526162074084000,
+                    "id": 36,
+                    "typeCode": 1,
+                    "annos": [
+                        {
+                            "name": "bookmarkProperties/description",
+                            "value": "Components and options for laying out your Bootstrap project, including wrapping containers, a powerful grid system, a flexible media object, and responsive utility classes.",
+                            "expires": 4,
+                            "flags": 0
+                        }
+                    ],
+                    "type": "text/x-moz-place",
+                    "uri": "https://getbootstrap.com/docs/4.1/layout/overview/#responsive-breakpoints"
+                },
+                {
+                    "guid": "WnhE-rB6I9zo",
+                    "title": "Algorithms : learnprogramming",
+                    "index": 38,
+                    "dateAdded": 1525824701782000,
+                    "lastModified": 1526162073959000,
+                    "id": 24,
+                    "typeCode": 1,
+                    "annos": [
+                        {
+                            "name": "bookmarkProperties/description",
+                            "value": "Generally speaking what is a good set of algorithms to learn?",
+                            "expires": 4,
+                            "flags": 0
+                        }
+                    ],
+                    "type": "text/x-moz-place",
+                    "uri": "https://www.reddit.com/r/learnprogramming/comments/8hvyds/algorithms/"
+                },
+                {
+                    "guid": "Ag3IIDSFYx3W",
+                    "title": "Manning | Grokking Algorithms",
+                    "index": 39,
+                    "dateAdded": 1525824705784000,
+                    "lastModified": 1525824705784000,
+                    "id": 30,
+                    "typeCode": 1,
+                    "type": "text/x-moz-place",
+                    "uri": "https://www.manning.com/books/grokking-algorithms"
+                },
+                {
+                    "guid": "5NwGgsZC3YUV",
+                    "title": "VisuAlgo - Sorting (Bubble, Selection, Insertion, Merge, Quick, Counting, Radix)",
+                    "index": 40,
+                    "dateAdded": 1525824712702000,
+                    "lastModified": 1526162073912000,
+                    "id": 20,
+                    "typeCode": 1,
+                    "annos": [
+                        {
+                            "name": "bookmarkProperties/description",
+                            "value": "Sorting is a very classic problem of reordering items (that can be compared, e.g. integers, floating-point numbers, strings, etc) of an array (or a list) in a certain order (increasing, non-decreasing, decreasing, non-increasing, lexicographical, etc).There are many different sorting algorithms, each has its own advantages and limitations.Sorting is commonly used as the introductory problem in various Computer Science classes to showcase a range of algorithmic ideas.Without loss of generality, we assume that we will sort only Integers, not necessarily distinct, in non-decreasing order in this visualization. Try clicking Bubble Sort for a sample animation of sorting the list of 5 jumbled integers (with duplicate) above.Click 'Next' (on the top right)/press 'Page Down' to advance this e-Lecture slide, use the drop down list/press 'Space' to jump to a specific slide, or Click 'X' (on the bottom right)/press 'Esc' to go to Exploration mode.",
+                            "expires": 4,
+                            "flags": 0
+                        }
+                    ],
+                    "type": "text/x-moz-place",
+                    "uri": "https://visualgo.net/en/sorting?slide=18-4"
+                },
+                {
+                    "guid": "g9U6eo_ZjE5Q",
+                    "title": "kamranahmedse/developer-roadmap: Roadmap to becoming a web developer in 2018",
+                    "index": 41,
+                    "dateAdded": 1526081343330000,
+                    "lastModified": 1526162074225000,
+                    "id": 49,
+                    "typeCode": 1,
+                    "iconuri": "https://github.githubassets.com/favicon.ico",
+                    "annos": [
+                        {
+                            "name": "bookmarkProperties/description",
+                            "value": "GitHub is where people build software. More than 27 million people use GitHub to discover, fork, and contribute to over 80 million projects.",
+                            "expires": 4,
+                            "flags": 0
+                        }
+                    ],
+                    "type": "text/x-moz-place",
+                    "uri": "https://github.com/kamranahmedse/developer-roadmap"
+                },
+                {
+                    "guid": "s7tGGqAqr6Qc",
+                    "title": "Coming back to front-end development after being under a rock since 2015. What do I need to know? : Frontend",
+                    "index": 42,
+                    "dateAdded": 1526081352126000,
+                    "lastModified": 1526162074271000,
+                    "id": 54,
+                    "typeCode": 1,
+                    "annos": [
+                        {
+                            "name": "bookmarkProperties/description",
+                            "value": "Reddit gives you the best of the internet in one place. Get a constantly updating feed of breaking news, fun stories, pics, memes, and videos just for you. Passionate about something niche? Reddit has thousands of vibrant communities with people that share your interests. Alternatively, find out what’s trending across all of Reddit on r/popular. Reddit is also anonymous so you can be yourself, with your Reddit profile and persona disconnected from your real-world identity.",
+                            "expires": 4,
+                            "flags": 0
+                        }
+                    ],
+                    "type": "text/x-moz-place",
+                    "uri": "https://www.reddit.com/r/Frontend/comments/8hed8o/coming_back_to_frontend_development_after_being/"
+                },
+                {
+                    "guid": "lIUV-H1FXk5E",
+                    "title": "Learning JavaScript Design Patterns",
+                    "index": 43,
+                    "dateAdded": 1526221966885000,
+                    "lastModified": 1526221966885000,
+                    "id": 69,
+                    "typeCode": 1,
+                    "charset": "UTF-8",
+                    "annos": [
+                        {
+                            "name": "bookmarkProperties/description",
+                            "value": "An open-source book on JavaScript Design Patterns",
+                            "expires": 4,
+                            "flags": 0
+                        }
+                    ],
+                    "type": "text/x-moz-place",
+                    "uri": "https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript"
+                },
+                {
+                    "guid": "cW26UELsQpa_",
+                    "title": "Eloquent JavaScript",
+                    "index": 44,
+                    "dateAdded": 1526229400952000,
+                    "lastModified": 1526229400952000,
+                    "id": 70,
+                    "typeCode": 1,
+                    "charset": "UTF-8",
+                    "type": "text/x-moz-place",
+                    "uri": "https://eloquentjavascript.net/"
+                }
+            ]
+        },
+        {
+            "guid": "mobile______",
+            "title": "mobile",
+            "index": 4,
+            "dateAdded": 1520350820684000,
+            "lastModified": 1520350820684000,
+            "id": 6,
+            "typeCode": 2,
+            "annos": [
+                {
+                    "name": "mobile/bookmarksRoot",
+                    "value": "1",
+                    "expires": 4,
+                    "flags": 0
+                }
+            ],
+            "type": "text/x-moz-place-container",
+            "root": "mobileFolder",
+            "children": [
+                {
+                    "guid": "MOJT3zDPHqy1",
+                    "title": "Firefox: About your browser",
+                    "index": 0,
+                    "dateAdded": 1520350820684000,
+                    "lastModified": 1520350820684000,
+                    "id": 126,
+                    "typeCode": 1,
+                    "type": "text/x-moz-place",
+                    "uri": "about:firefox"
+                },
+                {
+                    "guid": "YcGUrww5wV4h",
+                    "title": "Firefox: Customise with add-ons",
+                    "index": 1,
+                    "dateAdded": 1520350820684000,
+                    "lastModified": 1520350820684000,
+                    "id": 127,
+                    "typeCode": 1,
+                    "type": "text/x-moz-place",
+                    "uri": "https://addons.mozilla.org/android?utm_source=inproduct&utm_medium=default-bookmarks&utm_campaign=mobileandroid"
+                },
+                {
+                    "guid": "zjQdqxQOU-vk",
+                    "title": "Firefox: Support",
+                    "index": 2,
+                    "dateAdded": 1520350820684000,
+                    "lastModified": 1520350820684000,
+                    "id": 128,
+                    "typeCode": 1,
+                    "type": "text/x-moz-place",
+                    "uri": "https://support.mozilla.org/products/mobile?utm_source=inproduct&utm_medium=default-bookmarks&utm_campaign=mobileandroid"
+                }
+            ]
+        }
+    ]
+}
