@@ -31,8 +31,7 @@ class App extends Component {
     bookmarks[titleIndex] = bookmark;
 
     this.setState({
-      titles: bookmarks,
-      changeCounter = this.state
+      titles: bookmarks
     })
   }
 
