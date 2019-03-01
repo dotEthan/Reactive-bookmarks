@@ -1,10 +1,12 @@
-import React from 'react';
-import './Bookmark.css';
+import React, { useEffect } from 'react';
+import classes from './Bookmark.module.css';
 
 const bookmark = (props) => {
-
+    useEffect(() => {
+        console.log('Bookmark.js', "use effect")
+    });
     return (
-        <div className="Bookmark">
+        <div className={classes.Bookmark}>
             <p onClick={props.click}>
                 Here's the bookmark! {props.title}
             </p>

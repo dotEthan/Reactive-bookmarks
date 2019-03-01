@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
-import Bookmark from './Bookmark/Bookmark';
+
+import classes from './App.module.css';
+import Bookmarks from '../components/Bookmarks/Bookmarks';
+import Uploader from '../components/Uploader/Uploader';
+import Header from '../components/Header/Header';
 
 class App extends Component {
   state = {
@@ -9,7 +12,8 @@ class App extends Component {
       { id: 1, title: 'Title 2' },
       { id: 2, title: 'Title 3' },
     ],
-    showBookmarks: true
+    showBookmarks: true,
+    changeCounter: 0
   }
 
   titleChangeHandler = (e, id) => {
@@ -27,7 +31,8 @@ class App extends Component {
     bookmarks[titleIndex] = bookmark;
 
     this.setState({
-      titles: bookmarks
+      titles: bookmarks,
+      changeCounter = this.state
     })
   }
 
@@ -50,21 +55,21 @@ class App extends Component {
     if (this.state.showBookmarks) {
 
       bookmarks = (
-        <div className="bookmarks-contain">
-          {this.state.titles.map((bookmark, i) => {
-            return <Bookmark
-              key={bookmark.id}
-              title={bookmark.title}
-              click={() => this.deleteBookmarkHandler(i)}
-              changed={(e) => this.titleChangeHandler(e, bookmark.id)} />
-          })}
+        <div className={classes.bookmarksContain}>
+          <Bookmarks
+            titles={this.state.titles}
+            click={this.deleteBookmarkHandler}
+            change={this.titleChangeHandler} />
         </div>
-      )
+      );
     }
 
     return (
-      <div className="App">
-        <button onClick={this.toggleBookmarksHandler}>Switch Bookmarks</button>
+      <div className={classes.App}>
+        <Header />
+        <Uploader
+          showing={this.state.showBookmark}
+          click={this.toggleBookmarksHandler} />
         {bookmarks}
       </div>
     );

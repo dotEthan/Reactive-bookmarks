@@ -1,0 +1,17 @@
+
+
+.button.Red {
+    background-color: red;
+  }
+  
+  .button.Red:hover {
+    background-color: salmon;
+  }
+  
+  .button {
+    background-color: skyblue;
+  }
+  
+  .button:hover {
+    background-color: navy;
+  }

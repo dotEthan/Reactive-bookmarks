@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.bookmarks-contain {
+.bookmarksContain {
   display: flex;
   justify-content: space-around;
 }
