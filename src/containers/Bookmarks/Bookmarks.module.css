@@ -1,0 +1,9 @@
+
+.Bookmarks {
+    position: relative;
+}
+
+.BookmarksContain {
+    display: flex;
+    flex-wrap: wrap;    
+}

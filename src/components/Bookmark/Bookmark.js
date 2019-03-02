@@ -3,7 +3,7 @@ import classes from './Bookmark.module.css';
 
 const bookmark = (props) => {
     useEffect(() => {
-        console.log('Bookmark.js', "use effect")
+        // console.log('Bookmark.js', "use effect")
     });
     return (
         <div className={classes.Bookmark}>

@@ -1,0 +1,23 @@
+.navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+}
+
+.navUl {
+    list-style: none;
+}
+
+.navUl li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navUl li a {
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline;
+    color: green;
+}
