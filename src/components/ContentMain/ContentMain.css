@@ -1,0 +1,8 @@
+.ContentMain {
+    width: 80vw;
+    height: 100%;
+    background-color: #eef;
+    color: #112;
+    padding: 25px 15px;
+    text-align: left;
+}

@@ -1,0 +1,21 @@
+.contentSidebar {
+    width: 20vw;
+    height: 100%;
+    background-color: #112;
+    color: #eef;
+    padding: 25px 10px;
+    text-align: left;
+}
+
+.sidebarList {
+    padding-left: 20px;
+}
+
+.sidebarList li {
+    list-style: none;
+}
+
+.sidebarList li a {
+    color: #eef;
+    text-decoration: none;
+}

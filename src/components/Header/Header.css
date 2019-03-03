@@ -2,6 +2,17 @@
     width: 100%;
     height: 10vh;
     display: flex;
+    align-items: center;
+}
+
+.logo{ 
+    padding: 10px;
+}
+
+.nav {
+    flex-grow: 1;
+    display:flex;
+    justify-content: flex-end;
 }
 
 .navUl {
@@ -11,13 +22,9 @@
 .navUl li {
     display: inline-block;
     margin: 0 20px;
+    cursor: pointer;
 }
 
 .navUl li a {
     text-decoration: none;
-}
-
-.active {
-    text-decoration: underline;
-    color: green;
 }

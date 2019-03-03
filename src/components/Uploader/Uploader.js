@@ -13,7 +13,7 @@ const uploader = (props) => {
     return (
         <div className="uploadContain">
             <h1>UPLOADING!</h1>
-            <button className={btnClass} onClick={props.click}>Switch Bookmarks</button>
+            <button className={btnClass} onClick={props.click}>Upload</button>
         </div>
     );
 }
