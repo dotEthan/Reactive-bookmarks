@@ -37,9 +37,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onIncCounter: () => dispatch(fromActions.increment(10)),
         fetchBookmarksHandler: (result) => dispatch(fromActions.fetchBookmarks(result)),
-        DeleteResultHandler: (id) => dispatch(fromActions.deleteBookmark(id))
+        saveBookmarksHandler: () => dispatch(fromActions.saveBookmarks(this.props.bookmarks))
     };
 };
 

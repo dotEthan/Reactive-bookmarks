@@ -8,11 +8,11 @@ const contentSidebar = props => {
         <div className="contentSidebar">
             <ul className="sidebarList">
                 <li><NavLink to='/' exact>Home</NavLink></li>
-                <li><NavLink to='/uploads' exact>Upload</NavLink></li>
-                <li><NavLink to='/bookmarks' exact>Bookmarks</NavLink></li>
-                <li><NavLink to='/tags' exact>Tags</NavLink></li>
-                <li><NavLink to='/keywords' exact>Keywords</NavLink></li>
-                <li><NavLink to='/login' exact>Login</NavLink></li>
+                <li><NavLink to='/uploads'>Upload</NavLink></li>
+                <li><NavLink to='/bookmarks'>Bookmarks</NavLink></li>
+                <li><NavLink to='/tags'>Tags</NavLink></li>
+                <li><NavLink to='/keywords'>Keywords</NavLink></li>
+                <li><NavLink to='/login'>Login</NavLink></li>
             </ul>
         </div>
     );

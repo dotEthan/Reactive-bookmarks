@@ -1,3 +1,3 @@
 export { increment } from './counter';
-export { fetchBookmarks, deleteBookmark } from './bookmarks';
-export { auth } from './auth';
+export { fetchBookmarks, deleteBookmark, saveBookmarks } from './bookmarks';
+export { auth, authLogout, authTokenCheck } from './auth';
