@@ -33,10 +33,11 @@ So far it's working exactly as it should, though it's early days so that basical
 
 
 ### Working on Now:
-* Responsive Design
+* Authorization & User Specific Data
 
 ### To Come:
 
+* Refresh Token
 * TDD
 * Recipes Editable in place or in dashboard
 * Upload User JSON/HTML files

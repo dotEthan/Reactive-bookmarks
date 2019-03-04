@@ -4,13 +4,15 @@ import * as serviceWorker from './serviceWorker';
 import axios from 'axios';
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
 
 import './index.css';
 import App from './App';
 import counterReducer from './store/reducers/counter';
-import resultsReducer from './store/reducers/results';
+import bookmarksReducer from './store/reducers/bookmarks';
+import authReducer from './store/reducers/auth';
 
-axios.defaults.baseURL = 'https://jsonplaceholder.typicode.com';
+axios.defaults.baseURL = 'https://bookymarks-b360f.firebaseio.com/';
 axios.defaults.headers.common['Authorization'] = 'AUTH TOKEN';
 
 axios.interceptors.request.use(request => {
@@ -31,15 +33,16 @@ axios.interceptors.response.use(response => {
 
 const rootReducer = combineReducers({
     ctr: counterReducer,
-    res: resultsReducer
+    bms: bookmarksReducer,
+    auth: authReducer
 });
 
 const logger = store => {
     return next => {
         return action => {
-            console.log('middleware : ', action);
+            // console.log('middleware : ', action);
             const result = next(action);
-            console.log('Middleware 2:', store.getState());
+            // console.log('Middleware 2:', store.getState());
             return result;
         }
     }
@@ -47,7 +50,7 @@ const logger = store => {
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const store = createStore(rootReducer, composeEnhancers(applyMiddleware(logger)));
+const store = createStore(rootReducer, composeEnhancers(applyMiddleware(logger, thunk)));
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 

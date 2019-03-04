@@ -7,7 +7,8 @@ import ContentSidebar from '../../components/ContentSidebar/ContentSidebar';
 import ContentMain from '../../components/ContentMain/ContentMain';
 import Uploader from '../../components/Uploader/Uploader';
 import Bookmarks from '../Bookmarks/Bookmarks';
-import * as actionTypes from '../../store/actions';
+import * as fromActions from '../../store/actions/index';
+import Auth from '../Auth/Auth';
 
 class Content extends Component {
 
@@ -20,7 +21,8 @@ class Content extends Component {
                 <Route path="/" exact component={ContentMain} />
                 <Route path="/uploads" component={Uploader} />
                 <Route path="/bookmarks" render={() => <Bookmarks payload={bookmarkProps} />} />
-                {/* <Route path="/uploads" component={Uploader} /> */}
+                {/* <Route path="/bookmarks" render={() => <Bookmarks payload={bookmarkProps} />} /> */}
+                <Route path="/login" component={Auth} />
             </div>
         );
     }
@@ -29,15 +31,15 @@ class Content extends Component {
 const mapStateToProps = state => {
     return {
         ctr: state.ctr.counter,
-        results: state.res.results
+        bookmarks: state.bms.bookmarks
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-        onIncCounter: () => dispatch({ type: actionTypes.INCREMENT, payload: { value: 10 } }),
-        storeResultHandler: (result) => dispatch({ type: actionTypes.STORE_RESULT, payload: { result: result } }),
-        DeleteResultHandler: (id) => dispatch({ type: actionTypes.DELETE_RESULT, payload: { resultId: id } })
+        onIncCounter: () => dispatch(fromActions.increment(10)),
+        fetchBookmarksHandler: (result) => dispatch(fromActions.fetchBookmarks(result)),
+        DeleteResultHandler: (id) => dispatch(fromActions.deleteBookmark(id))
     };
 };
 

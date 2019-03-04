@@ -12,6 +12,7 @@ const contentSidebar = props => {
                 <li><NavLink to='/bookmarks' exact>Bookmarks</NavLink></li>
                 <li><NavLink to='/tags' exact>Tags</NavLink></li>
                 <li><NavLink to='/keywords' exact>Keywords</NavLink></li>
+                <li><NavLink to='/login' exact>Login</NavLink></li>
             </ul>
         </div>
     );

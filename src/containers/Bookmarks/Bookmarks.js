@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 import classes from './Bookmarks.module.css';
 // import Bookmark from '../../components/Bookmark/Bookmark';
@@ -6,32 +6,19 @@ import Input from '../../components/UI/Input/Input';
 import Button from '../../components/UI/Button/Button';
 
 const bookmarks = (props) => {
-    // let [bookmarks, setBookmarks] = useState(props.bookmarks);
-    // let [showBookmark, setShowBookmark] = useState(true);
 
     useEffect(() => {
 
-        // setBookmarks(bookmarks = props.bookmarks);
-        console.log(props);
+        // console.log(props);
+
     }, [props.bookmarks]);
-
-    // let overlay = (props.selectedPost || props.selectedPost === 0) ? <div className={classes.selectedBookmark}> {bookmarks[props.selectedPost].title}</div> : null;
-
-    // const toggleHandler = () => {
-    //     setShowBookmark(showBookmark = !showBookmark);
-    // }
 
     const orderHandler = (e) => {
         e.preventDefault();
         props.payload.onIncCounter();
     }
 
-    // const deleteHandler = (e) => {
-    //     console.log(e);
-    //     // props.payload.deleteHandler(e);
-    // }
-
-    const results = props.payload.results.map((result, i) => <li key={result.id} onClick={() => props.payload.DeleteResultHandler(result.id)}>{result.value}</li>);
+    const bookmarks = props.payload.bookmarks.map((bookmark, i) => <li key={bookmark.id} onClick={() => props.payload.DeleteResultHandler(bookmark.id)}>{bookmark.title}</li>);
 
 
     return (
@@ -46,9 +33,9 @@ const bookmarks = (props) => {
             </form>
             {props.payload.ctr}
             <hr />
-            <button onClick={() => props.payload.storeResultHandler(props.payload.ctr)}>Store Result</button>
+            <button onClick={props.payload.fetchBookmarksHandler}>fetch</button>
             <ul>
-                {results}
+                {bookmarks}
             </ul>
             {/* <div className={classes.BookmarksContain}>
                 {(bookmarks.length > 0) ? (

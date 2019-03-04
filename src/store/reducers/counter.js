@@ -1,4 +1,5 @@
-import * as actionTypes from '../actions';
+import * as actionTypes from '../actions/actionTypes';
+import { updateObject } from '../utility';
 
 
 const initialState = {
@@ -8,10 +9,11 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.INCREMENT:
-            return {
-                ...state,
-                counter: state.counter + action.payload.value
-            }
+            return updateObject(state, { counter: state.counter + action.value })
+        // return {
+        //     ...state,
+        //     counter: state.counter + action.value
+        // }
         default:
             return state
     };

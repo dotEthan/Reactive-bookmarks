@@ -1,33 +1,58 @@
 import React from 'react';
 
-import './Input.css';
+import classes from './Input.css';
 
 const input = (props) => {
     let inputElement = null;
+    const inputClasses = [classes.InputElement];
 
-    switch (props.inputtype) {
+    if (props.invalid && props.shouldValidate && props.touched) {
+        inputClasses.push(classes.Invalid);
+    }
+
+    switch (props.elementType) {
         case ('input'):
-            inputElement = <input className='InputElement' {...props} />;
+            inputElement = <input
+                className={inputClasses.join(' ')}
+                {...props.elementConfig}
+                value={props.value}
+                onChange={props.changed} />;
             break;
         case ('textarea'):
-            inputElement = <textarea className='InputElement' {...props} />;
-            break;
-        case ('dropdown'):
-            inputElement = <dropdown className='InputElement' {...props} />;
+            inputElement = <textarea
+                className={inputClasses.join(' ')}
+                {...props.elementConfig}
+                value={props.value}
+                onChange={props.changed} />;
             break;
         case ('select'):
-            inputElement = <select className='InputElement' {...props} />;
+            inputElement = (
+                <select
+                    className={inputClasses.join(' ')}
+                    value={props.value}
+                    onChange={props.changed}>
+                    {props.elementConfig.options.map(option => (
+                        <option key={option.value} value={option.value}>
+                            {option.displayValue}
+                        </option>
+                    ))}
+                </select>
+            );
             break;
         default:
-            inputElement = <input className='InputElement' {...props} />;
+            inputElement = <input
+                className={inputClasses.join(' ')}
+                {...props.elementConfig}
+                value={props.value}
+                onChange={props.changed} />;
     }
 
     return (
-        <div className="Input">
-            <label className='Label' >{props.label}</label>
+        <div className={classes.Input}>
+            <label className={classes.Label}>{props.label}</label>
             {inputElement}
         </div>
-    )
+    );
 
 };
 
