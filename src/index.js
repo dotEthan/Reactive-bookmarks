@@ -13,7 +13,6 @@ import bookmarksReducer from './store/reducers/bookmarks';
 import authReducer from './store/reducers/auth';
 
 axios.defaults.baseURL = 'https://bookymarks-b360f.firebaseio.com/';
-axios.defaults.headers.common['Authorization'] = 'AUTH TOKEN';
 
 axios.interceptors.request.use(request => {
     // console.log('Interceptor request', request);
@@ -42,7 +41,7 @@ const logger = store => {
         return action => {
             // console.log('middleware : ', action);
             const result = next(action);
-            // console.log('Middleware 2:', store.getState());
+            // console.log('Middleware :', store.getState());
             return result;
         }
     }

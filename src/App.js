@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 import classes from './App.module.css';
 import Header from './components/Header/Header';
 import Content from './containers/Content/Content';
-import * as actions from './store/actions/index';
+import * as fromActions from './store/actions/index';
 
 class App extends Component {
 
@@ -19,7 +19,12 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className={classes.App}>
-          <Header />
+          <Header
+            userId={this.props.userId}
+            bookmarks={this.props.bookmarks}
+            loggedIn={this.props.loggedIn}
+            logout={this.props.logoutHandler}
+            testMode={this.props.testMode} />
           <Content />
         </div>
       </BrowserRouter>
@@ -27,11 +32,21 @@ class App extends Component {
   }
 }
 
-const mapDispatchToProps = dispatch => {
+const mapStateToProps = state => {
   return {
-    onTryAutoSignup: () => dispatch(actions.authTokenCheck())
+    loggedIn: state.auth.loggedIn,
+    userId: state.auth.userId,
+    bookmarks: state.bms.bookmarks,
+    testMode: state.bms.testMode,
   };
 };
 
-export default connect(null, mapDispatchToProps)(App);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onTryAutoSignup: () => dispatch(fromActions.authTokenCheck()),
+    logoutHandler: () => dispatch(fromActions.authLogout()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
 

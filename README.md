@@ -5,7 +5,7 @@ A React based bookmark parser and organizer.
 
 ### Status
 
-Functionality: 5%  
+Functionality: 25%  
 Design: 10%  
 
 Just getting started.
@@ -16,9 +16,7 @@ Just getting started.
 
 Building the base structure using techniques learned in [Maximilian Schwarzmüller's React Tutorial](https://www.udemy.com/react-the-complete-guide-incl-redux/). Highly recommended and kept up-to-date!
 
-Will likley use firebase as a backend to start with.
-
-Right now just getting all the functionality I need installed. 
+Using Firebase as a backend as it's simple and great for my needs right now.
 
 ### What isn't working
 
@@ -30,14 +28,16 @@ So far it's working exactly as it should, though it's early days so that basical
 
 * Create list of Bookmarks based on JSON
 * Routing implemented
+* Authorization & User Specific Data
+* Refresh Token
 
 
 ### Working on Now:
-* Authorization & User Specific Data
+* Test Mode
 
 ### To Come:
 
-* Refresh Token
+* Load/Edit Bookmarks
 * TDD
 * Recipes Editable in place or in dashboard
 * Upload User JSON/HTML files
@@ -55,7 +55,7 @@ So far it's working exactly as it should, though it's early days so that basical
 * React
 * Redux
 * Firebase
-* Jest
+* Jest/Enzyme
 
 ## Author
 

@@ -7,7 +7,7 @@ const initialState = {
     error: null,
     loading: false,
     refreshToken: null,
-    testMode: true
+    loggedIn: false,
 }
 
 const authStart = (state, action) => {
@@ -19,8 +19,9 @@ const authSuccess = (state, action) => {
         token: action.token,
         userId: action.userId,
         refreshToken: action.refreshToken,
+        loggedIn: true,
         error: null,
-        loading: null
+        loading: null,
     });
 };
 
@@ -29,7 +30,14 @@ const authFail = (state, action) => {
 };
 
 const authLogout = (state, action) => {
-    return updateObject(state, { token: null, userId: null, refreshToken: null });
+    return updateObject(state, {
+        token: null,
+        userId: null,
+        loggedIn: false,
+        refreshToken: null,
+    });
+
+
 };
 
 const reducer = (state = initialState, action) => {

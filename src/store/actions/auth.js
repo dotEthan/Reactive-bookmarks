@@ -10,6 +10,7 @@ export const authStart = () => {
 };
 
 export const authSuccess = (token, userId, refreshToken) => {
+    // console.log('authsucess');
     return {
         type: actionTypes.AUTH_SUCCESS,
         token: token,
@@ -26,6 +27,7 @@ export const authFail = (error) => {
 };
 
 export const authLogout = () => {
+    // console.log('logging Out');
     localStorage.removeItem('token');
     localStorage.removeItem('expirationDate');
     localStorage.removeItem('userId');
@@ -36,12 +38,12 @@ export const authLogout = () => {
 }
 
 export const authRefresh = (token) => {
+    // console.log('authRefresh');
     return dispatch => {
         const refreshData = {
             grant_type: 'refresh_token',
             refresh_token: token
         };
-
         axios.post('https://securetoken.googleapis.com/v1/token?key=AIzaSyCERPPL7ES7rU8L1Paq36bKOsUuP2VcPI8', refreshData)
             .then(response => {
                 dispatch(authSuccess(response.data.id_token, response.data.user_id, response.data.refresh_token));
@@ -52,6 +54,8 @@ export const authRefresh = (token) => {
 }
 
 export const checkAuthTimeout = (exp, token) => {
+    // console.log('checkauthtimeout', exp);
+    // exp = 5000;
     return dispatch => {
         setTimeout(() => {
             dispatch(authRefresh(token));
@@ -74,7 +78,7 @@ export const auth = (email, password, isSignup) => {
         if (!isSignup) url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyCERPPL7ES7rU8L1Paq36bKOsUuP2VcPI8'
         axios.post(url, authData)
             .then(response => {
-                // console.log(response);
+                console.log(response.data.localId)
                 const expirationDate = new Date(new Date().getTime() + response.data.expiresIn * 1000);
                 localStorage.setItem('token', response.data.idToken);
                 localStorage.setItem('expirationDate', expirationDate);
@@ -92,11 +96,10 @@ export const auth = (email, password, isSignup) => {
     }
 }
 
-// working?
+// working? Yes! Longer  times?
 export const authTokenCheck = () => {
     return (dispatch) => {
         const token = localStorage.getItem('token');
-
         // flatten this
         if (!token) {
             dispatch(authLogout());
@@ -105,10 +108,11 @@ export const authTokenCheck = () => {
             if (expirationDate <= new Date()) {
                 dispatch(authLogout());
             } else {
-                const userId = localStorage.getItem(userId);
-                const refreshToken = localStorage.getItem(refreshToken);
+                const userId = localStorage.getItem('userId');
+                const refreshToken = localStorage.getItem('refreshToken');
                 dispatch(authSuccess(token, userId, refreshToken)); //getrefreshtoken from state
-                dispatch(checkAuthTimeout(expirationDate.getTime() - new Date().getTime(), refreshToken));
+                dispatch(checkAuthTimeout(Math.floor((expirationDate.getTime() - new Date().getTime()) / 1000), refreshToken));
+                dispatch(fetchBookmarks(token, userId));
             }
         }
     }

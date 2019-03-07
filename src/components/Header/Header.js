@@ -1,5 +1,9 @@
 import React from 'react';
-import { NavLink, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+
+import RealNav from './RealNav/RealNav';
+import TestModeMenu from './TestModeMenu/TestModeMenu';
+import * as fromActions from '../../store/actions/index';
 
 import './Header.css';
 
@@ -9,13 +13,16 @@ const header = (props) => {
         <div className="navbar">
             <div className="logo">BookyMarked</div>
             <div className="nav">
-                <ul className="navUl">
-                    <li><NavLink to='/'>Log Out</NavLink></li>
-                    <li><NavLink to='/login'>Register/Login</NavLink></li>
-                </ul>
+                {(props.testMode) ? <TestModeMenu clicked={props.testModeToggleHandler} /> : <RealNav loggedIn={props.loggedIn} logout={props.logout} loggedIn={props.loggedIn} />}
             </div>
         </div>
     );
-}
+};
 
-export default withRouter(header);
+const mapDispatchToProps = (dispatch) => {
+    return {
+        testModeToggleHandler: () => dispatch(fromActions.toggleTestMode()),
+    };
+};
+
+export default connect(null, mapDispatchToProps)(header);

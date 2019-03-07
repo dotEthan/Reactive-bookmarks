@@ -4,6 +4,7 @@ import { updateObject } from '../utility';
 
 const initialState = {
     bookmarks: [],
+    testMode: false,
 }
 
 const deleteBookmark = (state, action) => {
@@ -16,6 +17,10 @@ const bookmarksToState = (state, action) => {
     return updateObject(state, { bookmarks: newBookmarks });
 }
 
+const toggleTestMode = (state, action) => {
+    const testMode = !state.testMode;
+    return updateObject(state, { testMode: testMode })
+}
 
 
 const reducer = (state = initialState, action) => {
@@ -26,6 +31,8 @@ const reducer = (state = initialState, action) => {
             return deleteBookmark(state, action);
         case actionTypes.BOOKMARKS_TO_STATE:
             return bookmarksToState(state, action);
+        case actionTypes.TOGGLE_TEST_MODE:
+            return toggleTestMode(state, action);
 
         default:
             return state
