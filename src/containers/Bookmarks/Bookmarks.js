@@ -15,7 +15,6 @@ const bookmarks = (props) => {
 
     // method.bind(this,args); better?
     const bookmarks = props.payload.bookmarks.map((bookmark, i) => {
-        console.log('creating bookmarks', bookmark);
         return <Bookmark key={i} bookmarkInfo={bookmark} />
     });
 
@@ -23,7 +22,7 @@ const bookmarks = (props) => {
     return (
         <div className={classes.Bookmarks}>
             <h1>BookMarks</h1>
-            <button onClick={props.payload.fetchBookmarksHandler}>fetch</button>
+            {/* <button onClick={props.payload.fetchBookmarksHandler}>fetch</button> */}
             <ul>
                 {bookmarks}
             </ul>

@@ -13,7 +13,7 @@ import Auth from '../Auth/Auth';
 class Content extends Component {
 
     render() {
-        // Just the bookmark props, not 
+        // Just the bookmark props, not all
         const bookmarkProps = this.props;
         return (
             <div className="Content">
@@ -29,9 +29,13 @@ class Content extends Component {
 }
 
 const mapStateToProps = state => {
+    const bookmarkArray = Object.entries(state.bms.bookmarks);
+    const bmTrim = bookmarkArray.map(mark => {
+        const array = Object.entries(mark[1]);
+        return array;
+    });
     return {
-        ctr: state.ctr.counter,
-        bookmarks: state.bms.bookmarks,
+        bookmarks: bmTrim,
         userId: state.auth.userId,
         loggedIn: state.auth.loggedIn,
     };

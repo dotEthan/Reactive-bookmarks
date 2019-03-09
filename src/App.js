@@ -11,7 +11,7 @@ import * as fromActions from './store/actions/index';
 class App extends Component {
 
   componentDidMount() {
-    this.props.onTryAutoSignup();
+    if (!this.props.testMode) this.props.onTryAutoSignup();
   }
 
   render() {

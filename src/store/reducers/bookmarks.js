@@ -3,7 +3,28 @@ import { updateObject } from '../utility';
 
 
 const initialState = {
-    bookmarks: [],
+    bookmarks: [
+        // {
+        //     dateAdded: 1521420764848000,
+        //     description: "Wow! Never Saw That before!",
+        //     img: "image1.jpg",
+        //     keyword: "website",
+        //     lastModified: 1521420764848000,
+        //     tags: "website, google, links",
+        //     title: "Google Homepage",
+        //     url: "https://www.google.com"
+        // },
+        // {
+        //     dateAdded: 1521420764848000,
+        //     description: "A great site",
+        //     img: "image2.jpg",
+        //     keyword: "Recipe",
+        //     lastModified: 1521420764848000,
+        //     tags: "Recipe, Website, links",
+        //     title: "Recipe Sit",
+        //     url: "https://www.recipes.com"
+        // }
+    ],
     testMode: false,
 }
 

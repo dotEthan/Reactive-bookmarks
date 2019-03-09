@@ -1,35 +1,37 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import classes from './Bookmark.module.css';
 
 const bookmark = (props) => {
-    let dateAdded = null;
-    let description = null;
-    let img = null;
-    let keyword = null;
-    let lastModified = null;
-    let tags = null;
-    let title = null;
-    let url = null;
+    const [bookmark, updateBookmarks] = useState([
+        ['dateAdded', null],
+        ['description', null],
+        ['img', null],
+        ['keyword', null],
+        ['lastModified', null],
+        ['tags', null],
+        ['title', null],
+        ['url', null]
+    ]);
 
     useEffect(() => {
-        console.log('Bookmark.js', props.bookmarkInfo);
+        let da, desc, img, keyW, lm, tags, title, url = null;
+
         props.bookmarkInfo.map(info => {
-            // console.log(info[0]);
             switch (info[0]) {
                 case 'dateAdded':
-                    dateAdded = info[1];
+                    da = info[1];
                     break;
                 case 'description':
-                    description = info[1];
+                    desc = info[1];
                     break;
                 case 'img':
                     img = info[1];
                     break;
                 case 'keyword':
-                    keyword = info[1];
+                    keyW = info[1];
                     break;
                 case 'lastModified':
-                    lastModified = info[1];
+                    lm = info[1];
                     break;
                 case 'tags':
                     tags = info[1];
@@ -45,14 +47,27 @@ const bookmark = (props) => {
             }
         });
 
+        updateBookmarks([
+            ['dateAdded', da],
+            ['description', desc],
+            ['img', img],
+            ['keyword', keyW],
+            ['lastModified', lm],
+            ['tags', tags],
+            ['title', title],
+            ['url', url]
+
+        ]);
+
     }, [props.bookmarkInfo]);
 
     return (
         <div className={classes.Bookmark}>
+            {bookmark[6][1]}
             <p>
-                Here's the bookmark! {title}
+                Here's the bookmark!
             </p>
-            <h2>{url}</h2>
+            <h2>{bookmark[7][1]}</h2>
         </div>
     )
 }

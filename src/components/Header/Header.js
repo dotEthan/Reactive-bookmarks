@@ -13,7 +13,7 @@ const header = (props) => {
         <div className="navbar">
             <div className="logo">BookyMarked</div>
             <div className="nav">
-                {(props.testMode) ? <TestModeMenu clicked={props.testModeToggleHandler} /> : <RealNav loggedIn={props.loggedIn} logout={props.logout} loggedIn={props.loggedIn} />}
+                {(props.testMode) ? <TestModeMenu clicked={props.testModeToggleHandler} /> : <RealNav userId={props.userId} loggedIn={props.loggedIn} logout={props.logout} bookmarks={props.bookmarks} />}
             </div>
         </div>
     );

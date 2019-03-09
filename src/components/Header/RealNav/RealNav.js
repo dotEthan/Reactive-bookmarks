@@ -6,9 +6,9 @@ import { NavLink, withRouter } from 'react-router-dom';
 const RealNav = (props) => {
 
     const saveBookmarks = () => {
-        console.log('saving');
-        // axios.put(`/testdata.json`, props.bookmarks)
-        axios.put(`/realdata/${props.userId}.json?auth=${localStorage.getItem('token')}`, props.bookmarks)
+        console.log('saving', props.bookmarks);
+        axios.put(`/testdata.json`, props.bookmarks)
+            // axios.put(`/realdata/${props.userId}.json?auth=${localStorage.getItem('token')}`, props.bookmarks)
             .then(success => console.log('Success: ', success))
             .catch(error => console.log(`Error! ERROR!: ${error}!`));
     }

@@ -30,6 +30,7 @@ So far it's working exactly as it should, though it's early days so that basical
 * Routing implemented
 * Authorization & User Specific Data
 * Refresh Token
+* Load Bookmarks (Test or Real)
 
 
 ### Working on Now:
@@ -37,13 +38,14 @@ So far it's working exactly as it should, though it's early days so that basical
 
 ### To Come:
 
-* Load/Edit Bookmarks
+* Route Guards
+* Edit Bookmarks
 * TDD
 * Recipes Editable in place or in dashboard
 * Upload User JSON/HTML files
 * Implement Dashboard for editing bookmarks/tags/keywords
 * Keywords tied to default images, changable. 
-* Drag and Drop
+* Drag and Drop Upload
 * Deploy
 
 
